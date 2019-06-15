@@ -2,9 +2,13 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 
 /*
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Read Only by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+Notes
+- Original main color: #4acaa8
+- Changed main color to #29a8db
 */
 
 html, body, div, span, applet, object,
@@ -122,7 +126,9 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #4acaa8 !important;
+			/*Color link becomes upon hover.*/
+			color: #29a8db !important;
+			/*color: #4acaa8 !important;*/
 		}
 
 	strong, b {
@@ -1790,7 +1796,8 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #4acaa8;
+		color: #29a8db;
+		/*color: #4acaa8;*/
 		font-size: 3.5em;
 	}
 
@@ -1853,7 +1860,8 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #4acaa8;
+			/*border-color: #4acaa8;*/
+			border-color: #29a8db;
 		}
 
 	select {
@@ -1958,7 +1966,8 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #4acaa8;
+			/*border-color: #4acaa8;*/
+			border-color: #29a8db;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2407,7 +2416,8 @@ input, select, textarea {
 			}
 
 			ul.feature-icons li:before {
-				background: #4acaa8;
+				/*background: #4acaa8;*/
+				background: #29a8db;
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
@@ -2523,16 +2533,19 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: #989898;
-		border-radius: 5px;
-		border: 0;
-		color: #ffffff !important;
+		/*background-color: #989898;*/
+		background-color: #ffffff;
+		border-radius: 4px;
+		border: solid 2px #989898 !important;
+		/*color: #ffffff !important;*/
+		color: #989898 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 700;
 		height: 2.75em;
 		line-height: 2.75em;
 		padding: 0 1.5em;
+		padding-bottom: 2.5em;
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
@@ -2623,15 +2636,21 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #4acaa8;
-			color: #ffffff !important;
+			/*background-color: #4acaa8;*/
+			/*background-color: #29a8db;
+			color: #ffffff !important;*/
+			background-color: #ffffff;
+			color: #29a8db !important;
+			border-color: #29a8db !important;
 		}
 
 			input[type="submit"].primary:hover,
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #5ed0b1;
+				/*background-color: #5ed0b1;*/
+				background-color: #29a8db;
+				color: #ffffff !important;
 			}
 
 			input[type="submit"].primary:active,
@@ -2705,7 +2724,8 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #4acaa8;
+		/*background: #4acaa8;*/
+		background: #29a8db;
 		color: #d2f2e9;
 		height: 100%;
 		overflow-y: auto;
@@ -2756,7 +2776,8 @@ input, select, textarea {
 			}
 
 			#header > header p {
-				color: #d2f2e9;
+				/*color: #d2f2e9;*/
+				color: #8dddfc;
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
@@ -2777,7 +2798,9 @@ input, select, textarea {
 			}
 
 				#header > footer .icons li a {
-					color: #b7eadc;
+					/*Color of icons at bottom of header.*/
+					/*color: #b7eadc;*/
+					color: #8dddfc;
 				}
 
 		#header > nav {
@@ -2794,7 +2817,9 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #5ccfb1;
+					/*Border between navigation rows.*/
+					/*border-top: solid 2px #5ccfb1;*/
+					border-top: solid 2px #39b2db;
 					display: block;
 					padding: 0;
 				}
@@ -2813,7 +2838,9 @@ input, select, textarea {
 
 						#header > nav ul li a.active {
 							background: #fff;
-							color: #4acaa8 !important;
+							/*Color of text of current selected section.*/
+							/*color: #4acaa8 !important;*/
+							color: #29a8db !important;
 						}
 
 					#header > nav ul li:first-child {

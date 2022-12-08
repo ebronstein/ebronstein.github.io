@@ -22,10 +22,10 @@
 				</header>
 				<nav id="nav">
 					<ul>
-						<li><a href="#about_me" class="active">about me</a></li>
-						<li><a href="#research">research</a></li>
-						<li><a href="#projects">projects</a></li>
-						<li><a href="#awards">awards</a></li>
+						<li><a href="#about_me" class="active">About Me</a></li>
+						<li><a href="#research">Research</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#awards">Awards</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -61,17 +61,36 @@
 						<!-- Research -->
 							<section id="research">
 								<div class="container">
-									<h3>Research</h3>
+									<h2>Research</h2>
 
-									<!-- <ul class="feature-icons">
-										<li class="icon solid fa-code">Write all the code</li>
-										<li class="icon solid fa-cubes">Stack small boxes</li>
-										<li class="icon solid fa-book">Read books and stuff</li>
-										<li class="icon solid fa-coffee">Drink much coffee</li>
-										<li class="icon solid fa-bolt">Lightning bolt</li>
-										<li class="icon solid fa-users">Shadow clone technique</li>
-									</ul> -->
+									<h3>Conference Publications</h3>
+
 									<div class="features">
+										<article>
+											<a class="image"><img src="images/bronstein_embedding_2022.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>Embedding Synthetic Off-Policy Experience for Autonomous Driving via Zero-Shot Curricula</h4>
+												<b>E. Bronstein*</b>, S. Srinivasan*, S. Paul*, A. Sinha, M. O'Kelly, P. Nikdel, S. Whiteson</i>
+												<br>
+												<p>Conference on Robot Learning (CoRL), 2022
+													<br>
+													<a href="https://arxiv.org/abs/2212.01375" target="_blank" class="button primary icon small solid">ArXiv</a>
+												</p>
+											</div>
+											<p><br>ML-based motion planning is a promising approach to produce agents that exhibit complex behaviors, and automatically adapt to novel environments. In the context of autonomous driving, it is common to treat all available training data equally. However, this approach produces agents that do not perform robustly in safety-critical settings, an issue that cannot be addressed by simply adding more data to the training set - we show that an agent trained using only a 10% subset of the data performs just as well as an agent trained on the entire dataset. We present a method to predict the inherent difficulty of a driving situation given data collected from a fleet of autonomous vehicles deployed on public roads. We then demonstrate that this difficulty score can be used in a zero-shot transfer to generate curricula for an imitation-learning based planning agent. Compared to training on the entire unbiased training dataset, we show that prioritizing difficult driving scenarios both reduces collisions by 15% and increases route adherence by 14% in closed-loop evaluation, all while using only 10% of the training data.</p>
+										</article>
+
+										<article>
+											<h4>Hierarchical Model-Based Imitation Learning for Planning in Autonomous Driving</h4>
+											<b>E. Bronstein</b>, M. Palatucci, D. Notz, B. White, A. Kuefler, Y. Lu, S. Paul, P. Nikdel, P. Mougin, H. Chen, J. Fu, A. Abrams, P. Shah, E. Racah, B. Frenkel, S. Whiteson, D. Anguelov</i>
+											<br>
+											<p>International Conference on Intelligent Robots and Systems (IROS), 2022
+												<br>
+												<a href="https://arxiv.org/abs/2210.09539" target="_blank" class="button primary icon small solid">ArXiv</a>
+											</p>
+											<p>We demonstrate the first large-scale application of model-based generative adversarial imitation learning (MGAIL) to the task of dense urban self-driving. We augment standard MGAIL using a hierarchical model to enable generalization to arbitrary goal routes, and measure performance using a closed-loop evaluation framework with simulated interactive agents. We train policies from expert trajectories collected from real vehicles driving over 100,000 miles in San Francisco, and demonstrate a steerable policy that can navigate robustly even in a zero-shot setting, generalizing to synthetic scenarios with novel goals that never occurred in real-world driving. We also demonstrate the importance of mixing closed-loop MGAIL losses with open-loop behavior cloning losses, and show our best policy approaches the performance of the expert. We evaluate our imitative model in both average and challenging scenarios, and show how it can serve as a useful prior to plan successful trajectories.</p>
+										</article>
+
 										<article>
 											<a class="image"><img src="images/hierarchical_driving_game.jpg" alt="" /></a>
 											<div class="inner">
@@ -80,7 +99,7 @@
 												<br>
 												<p>International Conference on Robotics and Automation (ICRA), 2019
 													<br>
-													<a href="https://arxiv.org/pdf/1810.05766" target="_blank" class="button primary icon small solid">pdf</a>
+													<a href="https://arxiv.org/abs/1810.05766" target="_blank" class="button primary icon small solid">ArXiv</a>
 													<a href="images/ICRA_2019_driving_game_poster.pdf" target="_blank" class="button primary icon small solid">poster</a>
 												</p>
 											</div>
@@ -95,10 +114,26 @@
 												<br>
 												<p>Conference on Decision and Control (CDC), 2019
 													<br>
-													<a href="https://arxiv.org/pdf/1905.00532" target="_blank" class="button primary icon small solid">pdf</a>
+													<a href="https://arxiv.org/abs/1905.00532" target="_blank" class="button primary icon small solid">ArXiv</a>
 												</p>
 											</div>
 											<p><br>Real-world autonomous vehicles often operate in a priori unknown environments. Since most of these systems are safety-critical, it is important to ensure they operate safely in the face of environment uncertainty, such as unseen obstacles. Current safety analysis tools enable autonomous systems to reason about safety given full information about the state of the environment a priori. However, these tools do not scale well to scenarios where the environment is being sensed in real time, such as during navigation tasks. In this work, we propose a novel, real-time safety analysis method based on Hamilton-Jacobi reachability that provides strong safety guarantees despite environment uncertainty. Our safety method is planner-agnostic and provides guarantees for a variety of mapping sensors. We demonstrate our approach in simulation and in hardware to provide safety guarantees around a state-of-the-art vision-based, learning-based planner.</p>
+										</article>
+
+									</div>
+
+									<h3>Workshop and Journal Publications</h3>
+
+									<div class="features">
+										<article>
+											<h4>Imitation Is Not Enough: Robustifying Imitation with Reinforcement Learning for Challenging Driving Scenarios</h4>
+											<i>Y. Lu, J. Fu, G. Tucker, X. Pan, <b>E. Bronstein</b>, B. Roelofs, B. Sapp, B. White, A. Faust, S. Whiteson, D. Anguelov, S. Levine</i>
+											<br>
+											<p>Workshop on Machine Learning for Autonomous Driving, Neural Information Processing Systems (NeurIPS), 2022.
+												<br>
+												<a href="https://ml4ad.github.io/files/papers2022/Imitation%20Is%20Not%20Enough:%20Robustifying%20Imitation%20with%20Reinforcement%20Learning%20for%20Challenging%20Driving%20Scenarios.pdf" target="_blank" class="button primary icon small solid">pdf</a>
+											</p>
+											<p>Imitation learning (IL) is a simple and powerful way to use high-quality human driving data, which can be collected at scale, to identify driving preferences and produce human-like behavior. However, policies based on imitation learning alone often fail to sufficiently account for safety and reliability concerns. In this paper, we show how imitation learning combined with reinforcement learning using simple rewards can substantially improve the safety and reliability of driving policies over those learned from imitation alone. In particular, we use a combination of imitation and reinforcement learning to train a policy on over 100k miles of urban driving data, and measure its effectiveness in test scenarios grouped by different levels of collision risk. To our knowledge, this is the first application of a combined imitation and reinforcement learning approach in autonomous driving that utilizes large amounts of real-world human driving data.</p>
 										</article>
 
 										<article>
@@ -116,6 +151,7 @@
 											<p><br>In many applications, uncertainty in the durations of tasks complicates the development of plans and schedules. This has given rise to a range of resilient planning and scheduling techniques that in some way rely on probabilistic models of task durations. In this paper we consider the problem of using historical data to develop probabilistic task models for such planning and scheduling techniques. We describe a novel, Bayesian hierarchical approach for constructing task duration distributions from past data, and demonstrate its effectiveness in constructing predictive probabilistic distribution models. Unlike traditional statistical learning techniques, the proposed approach relies on minimal data, is inherently adaptive to time varying task duration distribution, and provides a rich description of confidence for decision making. These ideas are demonstrated using historical data provided by a local transit authority on bus dwell times at urban bus stops. Our results show that the task distributions generated by our approach yield significantly more accurate predictions than those generated by standard regression techniques.</p>
 										</article>
 									</div>
+
 								</div>
 							</section>
 
@@ -130,7 +166,7 @@
 												<h4>Grasp Transfer by Parts</h4>
 												<p>Class project for  EECS 106B: Robotic Manipulation and Interaction
 													<br>
-													<a href="https://sites.google.com/berkeley.edu/grasptransferbyparts/home" target="_blank" class="button primary icon small solid">website</a>
+													<a href="images/Grasp_Transfer_By_Parts_Report_Final.pdf" target="_blank" class="button primary icon small solid">pdf</a>
 												</p>
 											</div>
 											<p><br>Grasping, which focuses on enabling robots to manipulate objects, is challenging because of the large space of possible grasps and object poses that must be considered. We seek to decrease the complexity of planning grasps on objects by 1) segmenting a query object into parts, and 2) transferring precomputed good grasps to these parts from parts of previously seen objects, with the novel consideration that the query object and other object need not be from the same semantic class.</p>

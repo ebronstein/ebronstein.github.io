@@ -83,6 +83,61 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/waymax_still.jpg' width=100%>
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <span class="papertitle">Waymax: An Accelerated, Data-Driven Simulator for Large-Scale Autonomous
+                    Driving Research</span>
+                  <br>
+                  C. Gulino,
+                  J. Fu,
+                  W. Luo,
+                  G. Tucker,
+                  <strong>E. Bronstein</strong>
+                  Y. Lu,
+                  J. Harb,
+                  X. Pan,
+                  Y. Wang,
+                  X. Chen,
+                  J. D. Co-Reyes,
+                  R. Agarwal,
+                  R. Roelofs,
+                  Y. Lu,
+                  N. Montali,
+                  P. Mougin,
+                  Z. Yang,
+                  B. White,
+                  A. Faust,
+                  R. McAllister,
+                  D. Anguelov,
+                  B. Sapp
+                  <br>
+                  <em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2023
+                  <br>
+                  <a href="https://waymo.com/intl/es/research/waymax/" target="_blank">website</a>
+                  /
+                  <a href="https://arxiv.org/abs/2310.08710" target="_blank">arXiv</a>
+                  /
+                  <a href="https://github.com/waymo-research/waymax" target="_blank">code</a>
+                  <p></p>
+                  <p>
+                    Waymax is a library for simulating and evaluating agents using scenarios instantiated from the Waymo
+                    Open Motion Dataset. It is designed to support behavioral research (single and multi-agent planning,
+                    behavior prediction, sim agents) using the minimal representation of objects and bounding boxes
+                    adopted by the Waymo Open Motion Dataset, without the need for users to run their own perception
+                    system from raw sensor data.
+
+                    Waymax is entirely written using JAX, allowing users to easily run simulations on hardware
+                    accelerators, write programs in a single computation graph, and take advantage of JAX’s functional
+                    transforms such as JIT compilation.
+                  </p>
+                </td>
+              </tr>
+
               <tr bgcolor="#ffffd0">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -94,16 +149,15 @@
                     Zero-Shot Curricula</span>
                   <br>
                   <strong>E. Bronstein*</strong>,
-                  <a href="https://www.linkedin.com/in/sirish-srinivasan/?originalSubdomain=uk" target="_blank">S.
-                    Srinivasan*</a>,
-                  <a href="https://www.linkedin.com/in/supratik-paul-32375826/?originalSubdomain=uk" target="_blank">S.
-                    Paul</a>,
-                  <a href="https://amansinha.com/" target="_blank">A. Sinha</a>,
-                  <a href="https://www.linkedin.com/in/meokelly/" target="_blank">M. O'Kelly</a>,
-                  <a href="https://payamn.github.io/" target="_blank">P. Nikdel</a>,
-                  <a href="https://www.cs.ox.ac.uk/people/shimon.whiteson/" target="_blank">S. Whiteson</a>
+                  S. Srinivasan*,
+                  S. Paul*,
+                  A. Sinha,
+                  Matthew O'Kelly,
+                  P. Nikdel,
+                  S. Whiteson
                   <br>
-                  <em>Conference on Robot Learning (CoRL)</em>, 2022
+                  <em>Conference on Robot Learning (CoRL)</em>, 2022 &nbsp <font color="red"><strong>(Oral
+                      Presentation)</strong></font>
                   <br>
                   <a href="https://arxiv.org/abs/2212.01375" target="_blank">arXiv</a>
                   <p></p>
@@ -134,25 +188,27 @@
                   <span class="papertitle">Hierarchical Model-Based Imitation Learning for Planning in Autonomous
                     Driving</span>
                   <br>
-                  <strong>E. Bronstein</strong>,,
-                  <a href="" target="_blank">M. Palatucci</a>,
-                  <a href="" target="_blank">D. Notz</a>,
-                  <a href="" target="_blank">B. White</a>,
-                  <a href="" target="_blank">A. Kuefler</a>,
-                  <a href="" target="_blank">Y. Lu</a>,
-                  <a href="" target="_blank">S. Paul</a>,
-                  <a href="" target="_blank">P. Nikdel</a>,
-                  <a href="" target="_blank">P. Mougin</a>,
-                  <a href="" target="_blank">H. Chen</a>,
-                  <a href="" target="_blank">J. Fu</a>,
-                  <a href="" target="_blank">A. Abrams</a>,
-                  <a href="" target="_blank">P. Shah</a>,
-                  <a href="" target="_blank">E. Racah</a>,
-                  <a href="" target="_blank">B. Frenkel</a>,
-                  <a href="" target="_blank">S. Whiteson</a>,
-                  <a href="" target="_blank">D. Anguelov</a>
+                  <strong>E. Bronstein</strong>,
+                  M. Palatucci,
+                  D. Notz,
+                  B. White,
+                  A. Kuefler,
+                  Y. Lu,
+                  S. Paul,
+                  P. Nikdel,
+                  P. Mougin,
+                  H. Chen,
+                  J. Fu,
+                  A. Abrams,
+                  P. Shah,
+                  E. Racah,
+                  B. Frenkel,
+                  S. Whiteson,
+                  D. Anguelov
                   <br>
-                  <em>International Conference on Intelligent Robots and Systems (IROS)</em>, 2022
+                  <em>International Conference on Intelligent Robots and Systems (IROS)</em>, 2022 &nbsp <font
+                    color="red"><strong>(Oral
+                      Presentation)</strong></font>
                   <br>
                   <a href="https://arxiv.org/abs/2210.09539" target="_blank">arXiv</a>
                   <p></p>
@@ -181,12 +237,12 @@
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <span class="papertitle">Hierarchical Game-Theoretic Planning for Autonomous Vehicles</span>
                   <br>
-                  <a href="" target="_blank">J. Fisac*</a>,
+                  J. Fisac*,
                   <strong>E. Bronstein*</strong>,
-                  <a href="" target="_blank">E. Stefansson</a>,
-                  <a href="" target="_blank">D. Sadigh</a>,
-                  <a href="" target="_blank">S.S. Sastry</a>,
-                  <a href="" target="_blank">A. Dragan</a>
+                  E. Stefansson,
+                  D. Sadigh,
+                  S.S. Sastry,
+                  A. Dragan
                   <br>
                   <em>International Conference on Robotics and Automation (ICRA)</em>, 2019
                   <br>
@@ -224,11 +280,11 @@
                   <span class="papertitle">An Efficient Reachability-Based Framework for Provably Safe Autonomous
                     Navigation in Unknown Environments</span>
                   <br>
-                  <a href="" target="_blank">A. Bajcsy*</a>,
-                  <a href="" target="_blank">S. Bansal*</a>,
+                  A. Bajcsy*,
+                  S. Bansal*,
                   <strong>E. Bronstein</strong>,
-                  <a href="" target="_blank">V. Tolani</a>,
-                  <a href="" target="_blank">C. Tomlin</a>
+                  V. Tolani,
+                  C. Tomlin
                   <br>
                   <em>Conference on Decision and Control (CDC)</em>, 2019
                   <br>
@@ -256,18 +312,18 @@
                   <span class="papertitle">Imitation Is Not Enough: Robustifying Imitation with Reinforcement Learning
                     for Challenging Driving Scenarios</span>
                   <br>
-                  <a href="" target="_blank">Y. Lu</a>,
-                  <a href="" target="_blank">J. Fu</a>,
-                  <a href="" target="_blank">G. Tucker</a>,
-                  <a href="" target="_blank">X. Pan</a>,
+                  Y. Lu,
+                  J. Fu,
+                  G. Tucker,
+                  X. Pan,
                   <strong>E. Bronstein</strong>,
-                  <a href="" target="_blank">B. Roelofs</a>,
-                  <a href="" target="_blank">B. Sapp</a>,
-                  <a href="" target="_blank">B. White</a>,
-                  <a href="" target="_blank">A. Faust</a>,
-                  <a href="" target="_blank">S. Whiteson</a>,
-                  <a href="" target="_blank">D. Anguelov</a>,
-                  <a href="" target="_blank">S. Levine</a>
+                  B. Roelofs,
+                  B. Sapp,
+                  B. White,
+                  A. Faust,
+                  S. Whiteson,
+                  D. Anguelov,
+                  S. Levine
                   <br>
                   <em>Workshop on Machine Learning for Autonomous Driving, Neural Information Processing Systems
                     (NeurIPS)</em>, 2019
@@ -299,16 +355,17 @@
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <span class="papertitle">Generating Highly Predictive Probabilistic Models Of Task Durations</span>
                   <br>
-                  <a href="" target="_blank">I. Isukapati</a>,
-                  <a href="" target="_blank">C. Igoe</a>,
+                  I. Isukapati,
+                  C. Igoe,
                   <strong>E. Bronstein</strong>,
-                  <a href="" target="_blank">V. Parimi</a>,
-                  <a href="" target="_blank">S.Smith</a>
+                  V. Parimi,
+                  S.Smith
                   <br>
                   <em>IEEE Transactions on Intelligent Transportation Systems</em>, March 2020
                   <br>
                   <a href="https://www.ri.cmu.edu/wp-content/uploads/2020/03/Generating_Highly_Predictive_Probabilistic_Models_Of_Task_Durations__Final_Version.pdf"
                     target="_blank">pdf</a>
+                  /
                   <a href="https://riss.ri.cmu.edu/wp-content/uploads/2017/08/2017-RISS-Poster-BRONSTEIN-Eli-IGOE-Conor.compressed.pdf"
                     target="_blank">poster</a>
                   <p></p>
@@ -356,7 +413,7 @@
                   <span class="papertitle">Grasp Transfer by Parts</span>
                   <br>
                   <strong>E. Bronstein</strong>,
-                  <a href="" target="_blank">A. Talreja</a>
+                  A. Talreja
                   <br>
                   <em>Class project for EECS 106B: Robotic Manipulation and Interaction</em>
                   <br>
@@ -382,7 +439,7 @@
                   <span class="papertitle">Extending Single-Task Policy Distillation in Reinforcement Learning</span>
                   <br>
                   <strong>E. Bronstein</strong>,
-                  <a href="" target="_blank">Zhe Zheng</a>
+                  Zhe Zheng
                   <br>
                   <em>Class project for CS 294-112: Deep Reinforcement Learning</em>
                   <br>
